@@ -1,7 +1,5 @@
-import { IconProps } from '../utils/types';
-
-const Friends: React.FC<IconProps> = ({ size = 24, className = '' }) => {
-  const svgSize = `${size}px`;
+const Friends: React.FC = () => {
+  const svgSize = `${24}px`;
 
   return (
     <svg

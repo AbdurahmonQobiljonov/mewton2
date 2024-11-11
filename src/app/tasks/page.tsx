@@ -19,7 +19,7 @@ export default function Tasks() {
           <div className="flex flex-col">
             <div className="flex w-full justify-between items-center bg-gray rounded-lg px-4 py-2">
               <span className="text-orange text-semibold text-[14px]">
-                Subscribe<span className="text-white"> to "channel name"</span>
+                Subscribe<span className="text-white"> to channel name</span>
               </span>
               <div className="flex flex-col gap-2">
                 <button className="bg-orange rounded-lg py-1 px-5 font-medium  font-sans text-xs">

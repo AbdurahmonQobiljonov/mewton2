@@ -85,7 +85,7 @@ export default function Home() {
                 <img src="/energyicon.png" alt="" /> {rest}/1000
               </span>
               <span className="flex">
-                <img src="/cat.png" alt="" srcset="" /> 0
+                <img src="/cat.png" alt="" /> 0
               </span>
             </div>
           </div>
