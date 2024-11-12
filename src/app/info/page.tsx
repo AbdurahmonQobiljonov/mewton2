@@ -2,7 +2,7 @@ import { Accordion } from '@/components/acordion';
 import { BottomTabs } from '@/components/bottom-tabs';
 export default function Info() {
   return (
-    <div className="bg-welcomeBg flex justify-center">
+    <div className=" flex justify-center">
       <div className="w-full text-white h-screen font-bold flex flex-col max-w-xl py-10">
         <div className="flex justify-between items-center  px-4">
           <div className="  flex gap-5 items-center">
