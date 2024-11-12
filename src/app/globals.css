@@ -59,8 +59,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90vw;
-  height: 90vw;
+  width: 70vw;
+  height: 70vw;
   max-width: 360px;
   max-height: 360px;
 }
@@ -83,4 +83,14 @@ body {
     opacity: 0;
     transform: translateY(-50px);
   }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

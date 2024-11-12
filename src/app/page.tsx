@@ -1,5 +1,6 @@
 'use client';
 import { BottomTabs } from '@/components/bottom-tabs';
+import { Coin } from '@/components/coin';
 import { useState } from 'react';
 
 export default function Home() {
@@ -30,11 +31,15 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-welcomeBg flex justify-center font-sans overflow-hidden">
-      <div className="w-full text-white max-h-screen font-bold flex flex-col max-w-xl py-10 ">
-        <img className="absolute opacity-20" src="/bg.png" alt="" />
+    <div className="flex justify-center overflow-hidden">
+      <div className="w-full text-white max-h-screen font-bold flex flex-col max-w-xl py-5 ">
+        <img
+          className="absolute opacity-20 top-0 left-0 bottom-0 right-0 max-h-screen -z-10"
+          src="/bg.png"
+          alt=""
+        />
         <div className="flex justify-between items-center  px-4">
-          <div className="  flex gap-5 items-center">
+          <div className="flex gap-5 items-center">
             <div className="w-12 h-12 bg-light rounded-md text-xs flex items-center justify-center text-center">
               user avatar
             </div>
@@ -44,48 +49,42 @@ export default function Home() {
             Connect wallet
           </button>
         </div>
-        <div className="flex-1 mx-auto my-10">
-          <div className="grid grid-cols-3 gap-5">
-            <div className="bg-gray rounded-md flex flex-col items-center justify-between p-2">
+        <div className="flex-1 my-8 mx-4">
+          <div className="grid grid-cols-3 gap-5 w-full">
+            <div className="bg-cardBg rounded-md flex flex-col items-center justify-between p-2 gap-1">
               <span className="text-xs">total earned</span>
               <span className="text-xs flex gap-2">
-                <img className="w-[15px] h-[15px]" src="/ton.png" alt="" />
+                <img className="w-[15px] h-[15px]" src="/ton.svg" alt="" />
                 0.00
               </span>
             </div>
-            <div className="bg-gray rounded-md flex flex-col items-center justify-between p-2">
+            <div className="bg-grayBg rounded-md flex flex-col items-center justify-between p-2 gap-1">
               <span className="text-xs">total earned</span>
               <span className="text-xs flex gap-2">
-                <img className="w-[15px] h-[15px]" src="/ton.png" alt="" />
+                <img className="w-[15px] h-[15px]" src="/ton.svg" alt="" />
                 0.00
               </span>
             </div>
-            <div className="bg-gray rounded-md flex flex-col items-center justify-between p-2">
+            <div className="bg-grayBg rounded-md flex flex-col items-center justify-between p-2 gap-1">
               <span className="text-xs">total earned</span>
               <span className="text-xs flex gap-2">
-                <img className="w-[15px] h-[15px]" src="/ton.png" alt="" />
+                <img className="w-[15px] h-[15px]" src="/cat.png" alt="" />
                 0.00
               </span>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-between mt-14 gap-5">
-            <h1 className="text-3xl flex gap-2">
-              <img src="/monetka.png" alt="" />
+          <div className="flex flex-col items-center gap-4 py-2 mt-4 h-[57vh]">
+            <h1 className="text-3xl flex gap-2 mt-1">
+              <img className="w-[47px] h-[47px]" src="/moneta.png" alt="" />
               {points}
             </h1>
-            <div className="px-4 mt-4 flex justify-center">
-              <div className="w-80 h-80 p-4 rounded-full circle-outer" onClick={handleCardClick}>
-                <div className="w-full h-full rounded-full circle-inner">
-                  <img src="/cat (1).png" alt="Main Character" className="w-full h-full" />
-                </div>
-              </div>
-            </div>
+            <Coin onClick={handleCardClick} />
             <div className="flex justify-between w-2/3">
               <span className="flex gap-2">
-                <img src="/energyicon.png" alt="" /> {rest}/1000
+                <img className="w-[26px] h-[26px]" src="/energy.png" alt="" /> {rest}/1000
               </span>
               <span className="flex">
-                <img src="/cat.png" alt="" /> 0
+                <img className="w-[26px] h-[26px]" src="/cat.png" alt="" /> 0
               </span>
             </div>
           </div>

@@ -1,5 +1,5 @@
-import { SecondPage } from '@/components/welcome/second-page';
+import { WelcomeFirstPage } from '@/components/welcome/first-page';
 
 export default function Welcome() {
-  return <SecondPage />;
+  return <WelcomeFirstPage />;
 }

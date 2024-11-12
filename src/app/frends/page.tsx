@@ -3,7 +3,7 @@ import { Copy } from 'lucide-react';
 
 export default function Friends() {
   return (
-    <div className="bg-welcomeBg flex justify-center font-sans ">
+    <div className="bg-welcomeBg flex justify-center">
       <div className="w-full text-white h-screen font-bold flex flex-col max-w-xl py-10">
         <div className="flex justify-between items-center  px-4">
           <div className="  flex gap-5 items-center">
@@ -12,24 +12,24 @@ export default function Friends() {
             </div>
             <span className="text-xs">Name</span>
           </div>
-          <button className="bg-primary rounded-xl font-medium text-xs px-4 py-2">
+          <button className="bg-primary rounded-xl font-bold text-xs px-4 py-2">
             Connect wallet
           </button>
         </div>
-        <div className="flex-1  my-10 mx-4">
+        <div className="mt-10 pb-32  mx-4 overflow-auto scrollbar-hide ">
           <h1 className="text-2xl mb-2 text-center">Invite your friends!</h1>
           <h3 className="text-[14px] text-center">and get bonuses</h3>
           <div className="flex flex-col gap-5 mt-10">
             <div className="flex w-full justify-between items-center bg-gray rounded-lg px-4 py-2">
               <div className="flex gap-2 items-center">
-                <img className="w-[25px] h-[25px]" src="/ton.png" alt="" />
+                <img className="w-[25px] h-[25px]" src="/ton.svg" alt="" />
                 <span className=" text-semibold text-2xl">0.001</span>
               </div>
               <span className="text-base w-1/3">for 1 invitee friend</span>
             </div>
             <div className="flex w-full justify-between items-center bg-gray rounded-lg px-4 py-2">
               <div className="flex gap-2 items-center">
-                <img className="w-[25px] h-[25px]" src="/ton.png" alt="" />
+                <img className="w-[25px] h-[25px]" src="/ton.svg" alt="" />
                 <span className=" text-semibold text-2xl">0.001</span>
               </div>
               <span className="text-base w-1/3">
@@ -37,7 +37,7 @@ export default function Friends() {
               </span>
             </div>
             <div className="flex gap-2">
-              <button className="bg-orange rounded-lg py-1 px-5 font-semibold  font-sans text-lg flex-1">
+              <button className="bg-orange rounded-lg py-1 px-5 font-bold  font-sans text-lg flex-1">
                 invite friends
               </button>
               <button className="bg-orange rounded-lg py-1 px-5 font-semibold  font-sans text-lg">
@@ -54,7 +54,10 @@ export default function Friends() {
                 </div>
                 <span className="text-xs">Name</span>
               </div>
-              <span className="font-bold text-sm px-4 py-2">+0.005</span>
+              <span className="font-bold text-sm px-4 gap-1 py-2 flex items-center">
+                <img className="w-[20px] h-[20px]" src="/ton.svg" alt="" />
+                +0.005
+              </span>
             </div>
           </div>
         </div>

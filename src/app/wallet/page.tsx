@@ -1,7 +1,7 @@
 import { BottomTabs } from '@/components/bottom-tabs';
 export default function Wallet() {
   return (
-    <div className="bg-welcomeBg flex justify-center font-sans ">
+    <div className="bg-welcomeBg flex justify-center">
       <div className="w-full text-white h-screen font-bold flex flex-col max-w-xl py-10">
         <div className="flex justify-between items-center  px-4">
           <div className="  flex gap-5 items-center">
@@ -10,7 +10,7 @@ export default function Wallet() {
             </div>
             <span className="text-xs">Name</span>
           </div>
-          <button className="bg-primary rounded-xl font-medium text-xs px-4 py-2">
+          <button className="bg-primary rounded-xl font-bold text-xs px-4 py-2">
             Connect wallet
           </button>
         </div>
@@ -21,17 +21,20 @@ export default function Wallet() {
           </div>
           <div className="flex justify-between mt-10 mb-5">
             <div className="flex gap-2 items-center">
-              <img src="/ton.png" alt="" />
+              <img className="w-[40px]" src="/ton.svg" alt="" />
               <h2 className="text-4xl font-bold">0.00</h2>
             </div>
             <div className="bg-gray w-[105px] h-[55px] rounded-md flex flex-col items-center justify-between p-2">
               <span className="text-xs">total earned</span>
-              <span className="text-xs">0.00</span>
+              <span className="text-xs flex gap-1 items-center">
+                <img className="w-[15px]" src="/ton.svg" alt="" />
+                0.00
+              </span>
             </div>
           </div>
           <div className="flex flex-col gap-4 w-2/5">
-            <button className="bg-primary rounded-xl font-medium text-xs px-4 py-2">Top up</button>
-            <button className="bg-orange rounded-xl font-medium text-xs px-4 py-2">withdraw</button>
+            <button className="bg-primary rounded-xl font-bold text-xs px-4 py-2">Top up</button>
+            <button className="bg-orange rounded-xl font-bold text-xs px-4 py-2">withdraw</button>
           </div>
           <div className="w-full h-[3px] bg-gray my-10" />
           <div className="flex flex-col gap-3">

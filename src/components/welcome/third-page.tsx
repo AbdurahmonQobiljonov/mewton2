@@ -1,9 +1,14 @@
+import Cookies from 'js-cookie';
+import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 import { WelcomeBottom } from '../welcome-bottom';
 import { WelcomeHead } from '../welcome-head';
 
-export const ThirdPage = () => {
+export const ThirdPage = async () => {
+  Cookies.set('hasOnBoarded', 'true');
+
   return (
-    <div className="bg-welcomeBg flex justify-center font-sans">
+    <div className="bg-welcomeBg flex justify-center ">
       <div className="w-full  text-white h-screen font-bold flex flex-col max-w-xl">
         <WelcomeHead />
         <div className="flex flex-1 flex-col items-center gap-16 mt-10">
@@ -14,7 +19,11 @@ export const ThirdPage = () => {
             </h3>
           </div>
           <div className="bg-gray w-4/5 gap-5 rounded-lg p-4 flex flex-col justify-between items-center">
-            <span>UJF...33_</span>
+            <span className="flex items-center gap-2">
+              <img className="w-[20px]" src="/ton.svg" alt="" />
+              UJF...33_
+              <ChevronDown />
+            </span>
             <span className="text-2xl">Withdraw</span>
             <div className="w-full h-[1px] bg-slate-300" />
             <input
@@ -37,7 +46,9 @@ export const ThirdPage = () => {
             </button>
           </div>
         </div>
-        <WelcomeBottom />
+        <Link href="/">
+          <WelcomeBottom activeTab={3} />
+        </Link>
       </div>
     </div>
   );
