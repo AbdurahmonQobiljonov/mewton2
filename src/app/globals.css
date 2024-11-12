@@ -4,12 +4,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #18181c;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #18181c;
     --foreground: #ededed;
   }
 }
@@ -71,8 +71,8 @@ body {
   align-items: center;
   justify-content: center;
   -webkit-box-shadow: 5px 4px 76px 47px rgba(236, 221, 9, 0.2);
--moz-box-shadow: 5px 4px 76px 47px rgba(236, 221, 9, 0.2);
-box-shadow: 5px 4px 76px 47px rgba(236, 221, 9, 0.2);
+  -moz-box-shadow: 5px 4px 76px 47px rgba(236, 221, 9, 0.2);
+  box-shadow: 5px 4px 76px 47px rgba(236, 221, 9, 0.2);
 }
 
 @keyframes float {
@@ -93,6 +93,6 @@ box-shadow: 5px 4px 76px 47px rgba(236, 221, 9, 0.2);
 
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

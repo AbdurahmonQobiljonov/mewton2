@@ -27,6 +27,8 @@ export default {
         cardBg: '#2D2D2D',
         inputBg: '#2c2c2c',
         textColor: '#ADADAD',
+        dialogBg: '#2D2D2D',
+        mainBg: '#18181c',
       },
     },
   },

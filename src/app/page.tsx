@@ -1,6 +1,7 @@
 'use client';
 import { BottomTabs } from '@/components/bottom-tabs';
 import { Coin } from '@/components/coin';
+import { formatWithSpaces } from '@/lib/helpers/text';
 import { useState } from 'react';
 
 export default function Home() {
@@ -34,7 +35,7 @@ export default function Home() {
     <div className="flex justify-center overflow-hidden">
       <div className="w-full text-white max-h-screen font-bold flex flex-col max-w-xl py-5 relative">
         <img
-          className="absolute opacity-20 top-0 left-0 bottom-0 right-0 max-h-screen -z-10"
+          className="absolute opacity-20 top-0 left-0 bottom-0 right-0 max-h-screen -z-10 "
           src="/bg.png"
           alt=""
         />
@@ -45,7 +46,7 @@ export default function Home() {
             </div>
             <span className="text-xs">Name</span>
           </div>
-          <button className="bg-primary rounded-xl font-medium text-xs px-4 py-2">
+          <button className="bg-primary rounded-xl font-bold text-xs px-4 py-2">
             Connect wallet
           </button>
         </div>
@@ -54,29 +55,29 @@ export default function Home() {
             <div className="bg-cardBg rounded-md flex flex-col items-center justify-between p-2 gap-1">
               <span className="text-xs">total earned</span>
               <span className="text-xs flex gap-2">
-                <img className="w-[15px] h-[15px]" src="/ton.svg" alt="" />
+                <img className="w-[16px]" src="/ton.svg" alt="" />
                 0.00
               </span>
             </div>
             <div className="bg-grayBg rounded-md flex flex-col items-center justify-between p-2 gap-1">
               <span className="text-xs">total earned</span>
               <span className="text-xs flex gap-2">
-                <img className="w-[15px] h-[15px]" src="/ton.svg" alt="" />
+                <img className="w-[16px] " src="/ton.svg" alt="" />
                 0.00
               </span>
             </div>
             <div className="bg-grayBg rounded-md flex flex-col items-center justify-between p-2 gap-1">
               <span className="text-xs">total earned</span>
               <span className="text-xs flex gap-2">
-                <img className="w-[15px] h-[15px]" src="/cat.png" alt="" />
+                <img className="w-[16px] " src="/cat.png" alt="" />
                 0.00
               </span>
             </div>
           </div>
           <div className="flex flex-col items-center gap-4 py-2 mt-4 h-[57vh]">
-            <h1 className="text-3xl flex gap-2 mt-1">
+            <h1 className="text-3xl flex gap-2 mt-1 items-center">
               <img className="w-[47px] h-[47px]" src="/moneta.png" alt="" />
-              {points}
+              {formatWithSpaces(points)}
             </h1>
             <Coin onClick={handleCardClick} />
             <div className="flex justify-between w-2/3">

@@ -1,4 +1,6 @@
 import { BottomTabs } from '@/components/bottom-tabs';
+import { TopUp } from '@/components/dialog/top-up';
+import { Withdraw } from '@/components/dialog/withdraw';
 export default function Wallet() {
   return (
     <div className="bg-welcomeBg flex justify-center">
@@ -33,8 +35,8 @@ export default function Wallet() {
             </div>
           </div>
           <div className="flex flex-col gap-4 w-2/5">
-            <button className="bg-primary rounded-xl font-bold text-xs px-4 py-2">Top up</button>
-            <button className="bg-orange rounded-xl font-bold text-xs px-4 py-2">withdraw</button>
+            <TopUp title="Top up" />
+            <Withdraw />
           </div>
           <div className="w-full h-[3px] bg-gray my-10" />
           <div className="flex flex-col gap-3">

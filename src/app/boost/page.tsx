@@ -1,4 +1,5 @@
 import { BottomTabs } from '@/components/bottom-tabs';
+import { TopUpBalance } from '@/components/dialog/top-up-balance';
 
 export default function Boost() {
   return (
@@ -11,7 +12,7 @@ export default function Boost() {
             </div>
             <span className="text-xs">Name</span>
           </div>
-          <button className="bg-primary rounded-xl font-medium text-xs px-4 py-2">
+          <button className="bg-primary rounded-xl font-bold text-xs px-4 py-2">
             Connect wallet
           </button>
         </div>
@@ -21,9 +22,8 @@ export default function Boost() {
               <img className="w-[40px]" src="/ton.svg" alt="" />
               1000
             </h1>
-            <button className="bg-orange w-3/4 h-12 rounded-xl font-bold text-lg">
-              Top up balance
-            </button>
+            <TopUpBalance title="Top up balance" />
+
             <span className="text-3xl">Boosts</span>
           </div>
           <span className="text-[10px] my-4">

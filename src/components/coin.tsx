@@ -7,7 +7,7 @@ export const Coin = ({ onClick }: CoinProps) => {
     <div className="px-4 mt-4 flex justify-center">
       <div className="p-4 rounded-full circle-outer" onClick={onClick}>
         <div className="w-full h-full rounded-full circle-inner">
-          <img src="/cat.png" alt="Main Character" className="w-full h-full" />
+          <img src="/cat.png" alt="Main Character" className="max-w-screen-sm" />
         </div>
       </div>
     </div>
