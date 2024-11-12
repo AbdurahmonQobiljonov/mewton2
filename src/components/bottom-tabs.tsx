@@ -1,3 +1,4 @@
+import { Flame } from 'lucide-react';
 import Link from 'next/link';
 import { BoostSvg } from './icons/Boost';
 import Friends from './icons/Friends';
@@ -32,6 +33,10 @@ export const BottomTabs = () => {
       <Link href="/wallet" className="text-center text-light w-1/5 flex flex-col items-center">
         <WalletSvg />
         <p className="mt-1 text-[9px]">Wallet</p>
+      </Link>
+      <Link href="/welcome" className="text-center text-light w-1/5 flex flex-col items-center">
+        <Flame />
+        <p className="mt-1 text-[9px]">Welcome</p>
       </Link>
     </div>
   );
