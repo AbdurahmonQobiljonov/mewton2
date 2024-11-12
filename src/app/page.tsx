@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <div className="flex justify-center overflow-hidden">
-      <div className="w-full text-white max-h-screen font-bold flex flex-col max-w-xl py-5 ">
+      <div className="w-full text-white max-h-screen font-bold flex flex-col max-w-xl py-5 relative">
         <img
           className="absolute opacity-20 top-0 left-0 bottom-0 right-0 max-h-screen -z-10"
           src="/bg.png"
