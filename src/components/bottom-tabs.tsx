@@ -24,7 +24,7 @@ export const BottomTabs = () => {
       </Link>
       <Link href="/frends" className="text-center text-light w-1/5 flex flex-col items-center">
         <Friends />
-        <p className="mt-1 text-[9px]">Fends</p>
+        <p className="mt-1 text-[9px]">Friends</p>
       </Link>
       <Link href="/info" className="text-center text-light w-1/5 flex flex-col items-center">
         <InfoSvg />
