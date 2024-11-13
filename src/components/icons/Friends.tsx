@@ -1,5 +1,5 @@
 const Friends: React.FC = () => {
-  const svgSize = `${24}px`;
+  const svgSize = `${27}px`;
 
   return (
     <svg

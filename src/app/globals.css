@@ -55,18 +55,18 @@ body {
 }
 
 .circle-outer {
-  background: linear-gradient(to bottom, #ecb502, #bb9001);
+  background: linear-gradient(to bottom, #F3D55B, #F29C1F);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70vw;
-  height: 70vw;
+  width: 65vw;
+  height: 65vw;
   max-width: 360px;
   max-height: 360px;
 }
 
 .circle-inner {
-  background: radial-gradient(circle, #d5c702, #a39903);
+  background: radial-gradient(circle, #E9BD46, #E9BD45);
   display: flex;
   align-items: center;
   justify-content: center;

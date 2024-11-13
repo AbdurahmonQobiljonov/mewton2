@@ -34,11 +34,17 @@ export const ThirdPage = async () => {
             <div className="w-full flex flex-col justify-between gap-4">
               <div className="flex justify-between items-center">
                 <span className="text-xs font-bold">Fee</span>
-                <span className="text-xs font-bold">Will be credited</span>
+                <div className="flex gap-2 w-1/2">
+                  <span className="text-xs font-bold">Will be credited</span>
+                </div>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-xs font-bold">3%</span>
-                <span className="text-xs font-bold">0</span>
+                <div className="flex gap-2 w-1/2">
+                  <span className="text-xs font-bold flex items-center gap-1 self-start">
+                    <img className="w-[10px]" src="/ton.svg" alt="" />0
+                  </span>
+                </div>
               </div>
             </div>
             <button className="bg-orange w-full rounded-lg p-1 font-semibold text-base">

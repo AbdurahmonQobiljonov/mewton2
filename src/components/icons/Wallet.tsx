@@ -1,6 +1,6 @@
 export const WalletSvg = () => {
   return (
-    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M2.60806 2.97459L16.1933 0.0493331C17.3269 -0.217153 18.4143 0.629511 18.4143 1.78073V3.3862C18.4143 3.93849 17.9666 4.3862 17.4143 4.3862H2.78235C1.92634 4.3862 1.77672 3.17864 2.60652 2.97459H2.60806Z"
         fill="#C1C1C1"

@@ -12,7 +12,7 @@ export const BottomTabs = () => {
     <div className="fixed bottom-5 py-3 left-1/2 transform -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl bg-[#272a2f] flex justify-around items-center z-50 rounded-3xl text-xs">
       <Link href="/" className="text-center text-light w-1/5 flex flex-col items-center">
         <MainSvg />
-        <p className="mt-1 text-[9px] ">Main</p>
+        <p className="mt-1 text-[9px]">Main</p>
       </Link>
       <Link href="/boost" className="text-center text-light w-1/5 flex flex-col items-center">
         <BoostSvg />

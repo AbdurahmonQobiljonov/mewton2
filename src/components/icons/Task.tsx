@@ -1,6 +1,6 @@
 export const TaskSvg = () => {
   return (
-    <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M1 9.63086C2.24423 5.29672 6.23708 2.1257 10.9707 2.1257C15.1364 2.1257 18.7299 4.58202 20.3796 8.12646"
         stroke="#C1C1C1"
